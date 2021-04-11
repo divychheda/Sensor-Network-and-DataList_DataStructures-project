@@ -26,23 +26,24 @@ c. sensor_location(charater)(or sensor station)
 d. duration(time interval ex. 5 min- it means that a sensor senses the
 temperature , humidity etc. after every 5 min.)
 
-Central repository is the location where data from all sensors is collected and it should
-
-include following things-
+Central repository is the location where data from all sensors is collected and it should include following things-
 a. sensor_ID
-
 b. Date
 c. Time
 d. data(integer or float)
+
 Write a function central_repository (struct record* new_record) which will create
 a database of information collected from all sensors.
+
 2. Implement a function Install_new_Sensor() to add sensor to the existing sensor
 network at specified station.
 Note: New sensor will be added only if the type of sensor to be added is not
 present at specified station.
+
 3. Idle sensors are those which are not sending any information to central repository for
 more than 2months. Identify such idle sensors and remove them from database.
 (remove means permanently delete them from database)
+
 4. Retrieve_info() functions retrieves the data for sensors specified by following
 conditions
 A. Depending on sensor type (retrieves till date data)
@@ -51,6 +52,7 @@ B. Depending on specified date range (multiple dates) for specific sensor type
 5. Write function sensors_in_between() to print information of all sensors located in
 between any stations specified by sensor_ID range. (EX. if sensor ID range is 100-
 200. Expected output is the information of all sensors with ID>=100 and ID<=200)
+
 6. Adapt the existing data structure for sensor type which records multiple quantities.
 Ex. Air quality index (AQI) sensor which records entities like PM10, PM 2.5,
 nitrogen dioxide, sulphur dioxide, carbon monoxide, ground level ozone etc. and tries
